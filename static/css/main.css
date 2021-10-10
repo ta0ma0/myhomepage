@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'Terminus';
+    src: local('Terminus'),
+         url('../fonts/Terminus-TTF-500.ttf') format("truetype");
+  }
