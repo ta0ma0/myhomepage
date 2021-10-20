@@ -4,16 +4,19 @@ from datetime import datetime
 BORN_YEAR = 1983
 BORN_MONTH = 6
 BORN_DAY = 5
+START_WORKING = datetime(year=2009, month=7, day=1)
 
 def index(request):
     now_date = datetime.now()
     format_date = now_date.strftime('%a %b %d %H:%M:%S UTC %Y')
     age =  now_date.year - BORN_YEAR - ((now_date.month, now_date.day) < (BORN_MONTH, BORN_DAY))
+    expierience = now_date - START_WORKING
     context = {
         'page_title': 'Akmanov Ruslan',
         'formated_now_date': format_date,
         'age': age,
         'current_year': now_date.year,
+        'expierience': round(expierience.days / 356, 1)
     }
 
     return render(request, 'mainapp/index.html', context)

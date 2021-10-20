@@ -23,23 +23,76 @@
   <body>
 
     <main role='main' class="container">
-        <div class="container">
+        <div class="container main">
             <div class="row">
                 <div class="col-6">
                     <p>Welcome to Portfolio 1.0 LTS (Software Developer)</p>
-                    <div class="row">
-                    <div class="col-6">
-                        <p>* About me:</p>
-                    </div>
-                    <div class="col-6">
+                    <table class="info">
+                        <tr>
+                            <td>
+                                * About me:
+                            </td>
+                        <td>
                         <a href="https://ruslanakmanov.link/about_me">https://ruslanakmanov.link/about_me</a>
-                    </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            * Skills:
+                        </td>
+                        <td>
+                            <a href="https://ruslanakmanov.link/skills">https://ruslanakmanov.link/expirience</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>* Git:</td>
+                        <td><a href="https://github.com/ta0ma0">https://github.com/ta0ma0</a></td>
+                    </tr>
+                    <tr>
+                        <td>* Hobby projects:</td>
+                        <td><a href="https://ruslanakmanov.link/hobby">https://ruslanakmanov.link/hobby</a></td>
+                    </tr>
+                    <tr>
+                        <td>* Contacts:</td>
+                        <td><a href="https://ruslanakmanov.link/contacts ">https://ruslanakmanov.link/contacts</a></td>
+                    </tr>
+                        
+                    </table>
+                    <br>
+                    <p>System information as of {{formated_now_date}}</p>
+                    <table class="info">
+                        <tr>
+                            <td>Age:</td>
+                            <td>{{age}}</td>
+                        </tr>
+                        <tr>
+                            <td>Sex:</td>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <td>Education:</td>
+                            <td>Higher</td>
+                        </tr>
+                        <tr>
+                            <td>Experience:</td>
+                            <td>{{expierience}} years</td>
+                            </tr>
+                            <tr>
+                                <td>Location:</td>
+                                <td>Saint-Petersburg</td>
+                            </tr>
+                    </table>
                 </div>
-                </div>
-                <div class="col-6 photo">
+                <div class="col-6 photo text-right">
                     <a href = "#" class = "column col-xs-6" id = "grayscale">
-                        <img src = "{%static 'img/my_foto_window.png' %}"/>
+                        <img src = "{%static 'img/my_foto_window.png' %}"/></a>
                 </div>
+            </div>
+            <div class='console'>
+                <p><span style="color: green;">ruslan@akmanov</span>:<span style="color: blue;">~/copyright</span>$ cat -n license.txt</p>
+                <p style="margin-left: 30px; margin-top: -15px;">1 Ruslan Akmanov (CC BY) {{current_year}}.<br>
+                2 Email: ruslan.akm@gmail.com.</p>
+                <p style="margin-top: -15px;"><span style="color: green;">ruslan@akmanov</span>:<span style="color: blue;">~/copyright</span>$ <span class="blinking-cursor">|</span></p>
             </div>
         </div>
 
