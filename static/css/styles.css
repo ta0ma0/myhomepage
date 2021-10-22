@@ -86,7 +86,7 @@ tr {
 }
 
 .console {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 a {
@@ -109,15 +109,6 @@ a:hover {
     }
 }
 
-
-/* @media (min-width: 320px) {
-    img {
-        width: 0px;
-        text-align: left;
-    }
-    body {
-        width: 100%;
-        display: table-cell;
-        vertical-align: middle;
-    }
-} */
+#contentSpoiler {
+    line-height: 50%;
+}

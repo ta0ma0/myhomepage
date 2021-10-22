@@ -26,13 +26,24 @@
     <main role='main' class="container">
         <div class="container main">
             <div class="row">
-                <div class="col-6">
+                <div class="col-8">
                     <p>Welcome to Portfolio 1.0 LTS (Software Developer)</p>
                     <table class="info">
                         <tr>
-                            <td>* Skills:</td>
+                            <td id=top_after_spoiler>* Skills:</td>
                             <td>
-                                <a href="https://ruslanakmanov.link/skills">https://ruslanakmanov.link/expirience</a>
+                                <a href="javascript:Spoiler();" class="link_spoiler" id="linkSpoiler">https://ruslanakmanov.link/expirience</a>
+                                <div id="contentSpoiler" style="display: none;">
+                                    <p style="padding-top: 10px;">[======>]30% HTML5, CSS3, JavaScript (Basic) </p>
+                                    <p>[===============>]70% Data types and variables</p>
+                                    <p>[============>]60% OOPs Concepts</p>
+                                    <p>[========>]40% Data Structures</p>
+                                    <p>[==========>]50% SQL</p>
+                                    <p>[=============>]60% Version Control</p>
+                                    <p>[========>]40% Database Schemas Creation</p>
+                                    <p>[===============>]70% Communication Skills</p>
+                                </div>
+                                <!-- <a href="https://ruslanakmanov.link/skills">https://ruslanakmanov.link/expirience</a> -->
                             </td>
                         </tr>
                         <tr>
@@ -80,7 +91,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="col-6 photo text-right">
+                <div class="col-4 photo text-right">
                     <a href="#" class="column col-xs-6" id="grayscale">
                         <img src="{%static 'img/my_foto_window.png' %}" /></a>
                 </div>
@@ -104,6 +115,7 @@
     </script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/spoiler.js' %}"></script>
 </body>
 
 </html>
