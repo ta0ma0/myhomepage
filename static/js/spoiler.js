@@ -10,9 +10,7 @@ function Spoiler() {
     } else {
         ele.style.display = "block";
         text.innerHTML = "Hide &#172\;";
-        table_tag.style.textAlign = "left"
-        table_tag.style.verticalAlign = "middle"
-
-
+        table_tag.style.textAlign = "left";
+        table_tag.style.verticalAlign = "top";
     }
 }
