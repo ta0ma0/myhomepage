@@ -1,7 +1,8 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -18,9 +19,9 @@
     <!-- Custom styles for this template -->
     <link href="{% static 'css/main.css' %}" rel="stylesheet">
     <link href="{% static 'css/styles.css' %}" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body>
 
     <main role='main' class="container">
         <div class="container main">
@@ -29,34 +30,30 @@
                     <p>Welcome to Portfolio 1.0 LTS (Software Developer)</p>
                     <table class="info">
                         <tr>
+                            <td>* Skills:</td>
                             <td>
-                                * About me:
+                                <a href="https://ruslanakmanov.link/skills">https://ruslanakmanov.link/expirience</a>
                             </td>
-                        <td>
-                        <a href="https://ruslanakmanov.link/about_me">https://ruslanakmanov.link/about_me</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            * Skills:
-                        </td>
-                        <td>
-                            <a href="https://ruslanakmanov.link/skills">https://ruslanakmanov.link/expirience</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>* Git:</td>
-                        <td><a href="https://github.com/ta0ma0">https://github.com/ta0ma0</a></td>
-                    </tr>
-                    <tr>
-                        <td>* Hobby projects:</td>
-                        <td><a href="https://ruslanakmanov.link/hobby">https://ruslanakmanov.link/hobby</a></td>
-                    </tr>
-                    <tr>
-                        <td>* Contacts:</td>
-                        <td><a href="https://ruslanakmanov.link/contacts ">https://ruslanakmanov.link/contacts</a></td>
-                    </tr>
-                        
+                        </tr>
+                        <tr>
+                            <td>* Git:</td>
+                            <td><a href="https://github.com/ta0ma0">https://github.com/ta0ma0</a></td>
+                        </tr>
+                        <tr>
+                            <td>* Hobby projects:</td>
+                            <td><a href="https://ruslanakmanov.link/hobby">https://ruslanakmanov.link/hobby</a></td>
+                        </tr>
+                        <tr>
+                            <td>* About me:</td>
+                            <td>
+                                <a href="https://ruslanakmanov.link/about_me">https://ruslanakmanov.link/about_me</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>* Contacts:</td>
+                            <td><a href="https://ruslanakmanov.link/contacts ">https://ruslanakmanov.link/contacts</a></td>
+                        </tr>
+
                     </table>
                     <br>
                     <p>System information as of {{formated_now_date}}</p>
@@ -76,34 +73,37 @@
                         <tr>
                             <td>Experience:</td>
                             <td>{{expierience}} years</td>
-                            </tr>
-                            <tr>
-                                <td>Location:</td>
-                                <td>Saint-Petersburg</td>
-                            </tr>
+                        </tr>
+                        <tr>
+                            <td>Location:</td>
+                            <td>Saint-Petersburg</td>
+                        </tr>
                     </table>
                 </div>
                 <div class="col-6 photo text-right">
-                    <a href = "#" class = "column col-xs-6" id = "grayscale">
-                        <img src = "{%static 'img/my_foto_window.png' %}"/></a>
+                    <a href="#" class="column col-xs-6" id="grayscale">
+                        <img src="{%static 'img/my_foto_window.png' %}" /></a>
                 </div>
             </div>
             <div class='console'>
                 <p><span style="color: green;">ruslan@akmanov</span>:<span style="color: blue;">~/copyright</span>$ cat -n license.txt</p>
-                <p style="margin-left: 30px; margin-top: -15px;">1 Ruslan Akmanov (CC BY) {{current_year}}.<br>
-                2 Email: ruslan.akm@gmail.com.</p>
+                <p style="margin-left: 30px; margin-top: -15px;">1 Ruslan Akmanov (CC BY) {{current_year}}.<br> 2 Email: ruslan.akm@gmail.com.</p>
                 <p style="margin-top: -15px;"><span style="color: green;">ruslan@akmanov</span>:<span style="color: blue;">~/copyright</span>$ <span class="blinking-cursor">|</span></p>
             </div>
         </div>
 
-    </main><!-- /.container -->
+    </main>
+    <!-- /.container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-  </body>
+</body>
+
 </html>
