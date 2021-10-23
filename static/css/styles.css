@@ -107,11 +107,14 @@ a:hover {
         display: table-cell;
         vertical-align: middle;
     }
+    #contentSpoiler {
+        font-size: 10px;
+    }
 }
 
 #contentSpoiler {
     line-height: 50%;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .skills_right {
