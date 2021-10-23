@@ -116,6 +116,12 @@ a:hover {
     line-height: 50%;
     font-size: 16px;
 }
+#contentSpoiler2 {
+    line-height: 80%;
+    font-size: 16px;
+    word-wrap: break-word;
+    width: 500px;
+}
 
 .skills_right {
     text-align: right;
