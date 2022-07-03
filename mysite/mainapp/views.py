@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from datetime import datetime
+from mainapp.models import count_git_projects
+from mainapp.settings import GIT_API_URL    
 
 BORN_YEAR = 1983
 BORN_MONTH = 6
@@ -11,9 +13,11 @@ def index(request):
     format_date = now_date.strftime('%a %b %d %H:%M:%S UTC %Y')
     age =  now_date.year - BORN_YEAR - ((now_date.month, now_date.day) < (BORN_MONTH, BORN_DAY))
     expierience = now_date - START_WORKING
+    count_projects = count_git_projects(GIT_API_URL=GIT_API_URL)
     context = {
         'page_title': 'Akmanov Ruslan',
         'formated_now_date': format_date,
+        'count_projects': count_projects,
         'age': age,
         'current_year': now_date.year,
         'expierience': round(expierience.days / 356, 1),
