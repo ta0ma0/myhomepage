@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+mysite/mysite/settings.py
+.htaccess
+passenger_wsgi.py
